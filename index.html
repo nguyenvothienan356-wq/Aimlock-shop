@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BẢNG GIÁ AIMLOCK | DEV ARNOLD</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#070707;
+    color:#fff;
+}
+
+header{
+    text-align:center;
+    padding:35px 15px;
+    background:
+        radial-gradient(circle at center,#5c0000 0%,#170000 45%,#050505 100%);
+    border-bottom:2px solid #ff1b1b;
+    box-shadow:0 0 30px rgba(255,0,0,.25);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:900;
+    color:#fff;
+    text-shadow:0 0 15px #ff0000;
+}
+
+.dev{
+    margin-top:8px;
+    color:#ff3030;
+    font-size:15px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.slogan{
+    margin-top:10px;
+    color:#aaa;
+    font-size:13px;
+}
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section{
+    margin-top:32px;
+}
+
+.section h2{
+    color:#ff2525;
+    border-left:4px solid #ff1717;
+    padding-left:12px;
+    margin-bottom:18px;
+    text-transform:uppercase;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
+}
+
+.card{
+    background:linear-gradient(145deg,#151515,#0c0c0c);
+    border:1px solid #390000;
+    border-radius:14px;
+    padding:20px;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#ff2020;
+    box-shadow:0 0 22px rgba(255,0,0,.25);
+}
+
+.card h3{
+    min-height:42px;
+    font-size:18px;
+}
+
+.price{
+    color:#ff2525;
+    font-size:25px;
+    font-weight:900;
+    margin:12px 0 16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(90deg,#a80000,#f00000);
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    background:#ff2424;
+    box-shadow:0 0 15px rgba(255,0,0,.4);
+}
+
+.order{
+    margin:40px 0;
+    padding:25px;
+    background:#101010;
+    border:1px solid #430000;
+    border-radius:16px;
+}
+
+.order h2{
+    color:#ff2525;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:6px;
+    color:#ccc;
+}
+
+input{
+    width:100%;
+    padding:13px;
+    background:#050505;
+    color:white;
+    border:1px solid #400000;
+    border-radius:8px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#ff2222;
+}
+
+.total{
+    margin:18px 0;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.total span{
+    color:#ff2525;
+}
+
+.status{
+    margin-top:15px;
+    padding:12px;
+    background:#190000;
+    border-radius:8px;
+    color:#ff7777;
+    text-align:center;
+}
+
+.admin{
+    margin-bottom:40px;
+    padding:25px;
+    background:#0e0e0e;
+    border:1px solid #430000;
+    border-radius:16px;
+}
+
+.admin h2{
+    color:#ff2525;
+    margin-bottom:15px;
+}
+
+.note{
+    margin-top:12px;
+    color:#777;
+    font-size:12px;
+    line-height:1.5;
+}
+
+footer{
+    text-align:center;
+    padding:28px;
+    border-top:1px solid #250000;
+    color:#666;
+    font-size:13px;
+}
+
+@media(max-width:500px){
+    .logo{
+        font-size:27px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🔴 BẢNG GIÁ AIMLOCK</div>
+    <div class="dev">DEV ARNOLD</div>
+    <div class="slogan">UY TÍN • CHẤT LƯỢNG • HIỆU QUẢ</div>
+</header>
+
+<div class="container">
+
+<!-- AIMLOCK -->
+<div class="section">
+<h2>🔥 Sản phẩm Aimlock</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>Aimlock V1</h3>
+<div class="price">100K</div>
+<button onclick="chon('Aimlock V1',100000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Aimlock V2</h3>
+<div class="price">200K</div>
+<button onclick="chon('Aimlock V2',200000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Aimlock V3</h3>
+<div class="price">300K</div>
+<button onclick="chon('Aimlock V3',300000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Aimlock V4</h3>
+<div class="price">400K</div>
+<button onclick="chon('Aimlock V4',400000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Aimlock V5</h3>
+<div class="price">500K</div>
+<button onclick="chon('Aimlock V5',500000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Aimlock V6</h3>
+<div class="price">600K</div>
+<button onclick="chon('Aimlock V6',600000)">ĐẶT ĐƠN</button>
+</div>
+
+</div>
+</div>
+
+<!-- TÍNH NĂNG -->
+<div class="section">
+<h2>⚙️ Tính năng lẻ</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>Nhẹ tâm</h3>
+<div class="price">100K</div>
+<button onclick="chon('Nhẹ tâm',100000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Bám đầu</h3>
+<div class="price">100K</div>
+<button onclick="chon('Bám đầu',100000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Nhạy tâm</h3>
+<div class="price">100K</div>
+<button onclick="chon('Nhạy tâm',100000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Fix rung tâm</h3>
+<div class="price">100K</div>
+<button onclick="chon('Fix rung tâm',100000)">ĐẶT ĐƠN</button>
+</div>
+
+</div>
+</div>
+
+<!-- COMBO -->
+<div class="section">
+<h2>📦 Combo</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>Nhẹ tâm + Bám đầu V1</h3>
+<div class="price">150K</div>
+<button onclick="chon('Nhẹ tâm + Bám đầu V1',150000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Nhẹ tâm + Bám đầu V2</h3>
+<div class="price">200K</div>
+<button onclick="chon('Nhẹ tâm + Bám đầu V2',200000)">ĐẶT ĐƠN</button>
+</div>
+
+<div class="card">
+<h3>Nhẹ tâm + Bám đầu V3</h3>
+<div class="price">250K</div>
+<button onclick="chon('Nhẹ tâm + Bám đầu V3',250000)">ĐẶT ĐƠN</button>
+</div>
+
+</div>
+</div>
+
+<!-- AVT CACHE -->
+<div class="section">
+<h2>🚀 Aimlock AVT-Cache</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>Aimlock</h3>
+<div class="price">150K</div>
+<button onclick="chon('Aimlock AVT-Cache',150000)">ĐẶT ĐƠN</button>
+</div>
+
+</div>
+</div>
+
+<!-- ĐẶT ĐƠN -->
+<div class="order" id="order">
+<h2>🛒 Đặt đơn</h2>
+
+<label>Sản phẩm</label>
+<input id="sanpham" readonly placeholder="Hãy chọn sản phẩm">
+
+<label>Tên / ID</label>
+<input id="ten" placeholder="Nhập tên hoặc ID">
+
+<label>Liên hệ</label>
+<input id="lienhe" placeholder="Zalo / Messenger">
+
+<div class="total">
+Tổng tiền: <span id="tong">0K</span>
+</div>
+
+<button onclick="datDon()">GỬI ĐƠN</button>
+
+<div class="status" id="trangthai">
+Trạng thái: Chưa có đơn
+</div>
+</div>
+
+<!-- ADMIN -->
+<div class="admin">
+<h2>🔐 Khu vực Admin</h2>
+
+<label>Tài khoản</label>
+<input id="adminUser" placeholder="Tài khoản Admin">
+
+<label>Mật khẩu</label>
+<input id="adminPass" type="password" placeholder="Mật khẩu Admin">
+
+<br><br>
+
+<button onclick="adminLogin()">ĐĂNG NHẬP ADMIN</button>
+
+<div class="note">
+Admin thật cần được xác thực bằng backend/database.
+Không nên lưu mật khẩu Admin trực tiếp trong index.html.
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 BẢNG GIÁ AIMLOCK • DEV ARNOLD
+</footer>
+
+<script>
+
+let gia = 0;
+
+function chon(ten, tien){
+
+    document.getElementById("sanpham").value = ten;
+
+    gia = tien;
+
+    document.getElementById("tong").innerText =
+        (tien / 1000) + "K";
+
+    document.getElementById("trangthai").innerText =
+        "Đã chọn: " + ten;
+
+    document.getElementById("order")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+}
+
+function datDon(){
+
+    const sanpham =
+        document.getElementById("sanpham").value;
+
+    const ten =
+        document.getElementById("ten").value;
+
+    const lienhe =
+        document.getElementById("lienhe").value;
+
+    if(!sanpham || !ten || !lienhe){
+
+        alert("⚠️ Vui lòng nhập đầy đủ thông tin!");
+
+        return;
+    }
+
+    const maDon =
+        "DH" + Date.now().toString().slice(-7);
+
+    document.getElementById("trangthai").innerText =
+        "🟡 Đơn " + maDon + " — ĐANG CHỜ ADMIN DUYỆT";
+
+    alert(
+        "✅ Gửi đơn thành công!\\n\\n" +
+        "Mã đơn: " + maDon + "\\n" +
+        "Sản phẩm: " + sanpham + "\\n" +
+        "Giá: " + (gia/1000) + "K\\n" +
+        "Trạng thái: Chờ Admin duyệt"
+    );
+}
+
+function adminLogin(){
+
+    const user =
+        document.getElementById("adminUser").value;
+
+    const pass =
+        document.getElementById("adminPass").value;
+
+    if(!user || !pass){
+
+        alert("⚠️ Vui lòng nhập tài khoản và mật khẩu!");
+
+        return;
+    }
+
+    alert(
+        "🔐 Đây mới là giao diện Admin.\\n\\n" +
+        "Cần kết nối backend để xác thực tài khoản " +
+        "và duyệt đơn thật."
+    );
+}
+
+</script>
+
+</body>
+</html>
